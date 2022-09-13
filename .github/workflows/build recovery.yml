@@ -14,7 +14,7 @@ on:
       DEVICE_TREE:
         description: 'device tree'
         required: true
-        default: 'https://github.com/xiaoleGun/android_device_xiaomi_wayne-twrp'
+        default: 'https://github.com/L1sa-f/android_device_xiaomi_wayne-twrp'
       DEVICE_TREE_BRANCH:
         description: 'branch'
         required: true
@@ -22,15 +22,15 @@ on:
       DEVICE_PATH:
         description: 'device path'
         required: true
-        default: 'device/xiaomi/wayne'
+        default: 'device/xiaomi/lavender'
       DEVICE_NAME:
         description: 'device codename'
         required: true
-        default: 'wayne'
+        default: 'lavender'
       MAKEFILE_NAME:
         description: 'makefile name'
         required: true
-        default: 'twrp_wayne'
+        default: 'twrp_lavender'
         
 jobs:
   Build:
@@ -74,7 +74,7 @@ jobs:
       run: |
         mkdir ${GITHUB_WORKSPACE}/workspace
         cd ${GITHUB_WORKSPACE}/workspace
-        git config --global user.name "Hikaru's Action-Build-Bot"
+        git config --global user.name "Action-Build-Bot"
         git config --global user.email "Android@teio.tk"
         repo init --depth=1 -u ${{ github.event.inputs.MANIFEST }} -b ${{ github.event.inputs.MANIFEST_BRANCH }}
         

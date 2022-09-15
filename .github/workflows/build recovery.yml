@@ -14,7 +14,7 @@ on:
       DEVICE_TREE:
         description: 'device tree'
         required: true
-        default: 'https://github.com/lisamp3/android_device_xiaomi_wayne-twrp'
+        default: 'https://github.com/L1sa-f/android_device_xiaomi_wayne-twrp'
       DEVICE_TREE_BRANCH:
         description: 'branch'
         required: true

@@ -14,7 +14,7 @@ on:
       DEVICE_TREE:
         description: 'device tree'
         required: true
-        default: 'https://github.com/L1sa-f/android_device_xiaomi_wayne-twrp'
+        default: 'https://L1sa-f:${token}@github.com/L1sa-f/twrp_lavender_erofs_4.19'
       DEVICE_TREE_BRANCH:
         description: 'branch'
         required: true
